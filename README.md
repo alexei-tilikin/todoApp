@@ -8,3 +8,9 @@ Current version does NOT persist the data on the database.
 
 Usage:
     node main.js
+    
+Testing:
+
+In directory /test read tester.txt
+Run:
+    node test.js
