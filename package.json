@@ -1,0 +1,21 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "AngularJS TODO application with backend storage.",
+  "main": "./main.js",
+  "engines": {
+    "node": "0.10.x",
+    "npm": ">=1.2.x"
+  },
+  "dependencies" : {
+    "mini-express-alexei": ">=1.0.x"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexei-tilikin/todoApp.git"
+  },
+  "author": {
+      "name": "Alexei Tilikin",
+      "email": "alexei.tilikin@mail.huji.ac.il"
+  }
+} 

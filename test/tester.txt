@@ -1,0 +1,30 @@
+Documentation for test.js
+Testing HTTP API that used by the frontend.
+
+Usage: node test.js
+
+Defined tests:
+    testRegister - testing POST /register API.
+Verifying valid & invalid cases:
+response 200 has 'set-cookie' header;
+response 500 has JSON with msg field;
+    
+    testLogin - testing POST /login API.
+Verifying the same test cases as for /register.
+Additionaly, checking that illegal credentials cause /login to fail with response 500.
+Using setUp phase to register new user with /register API.
+
+
+    testItem - testing all defined APIs for /item:
+GET /item - retrieves full list of todo items.
+POST /item - adds new todo item to the list.
+PUT /item - updates existing item, or sets 'completed' status for all items.
+DELETE /item - removes either specific item, or all completed items.
+
+testItem reproduces certain flow scenario to cover the most of the use cases for all those APIs.
+Previous subtests used as setup phase for the following.
+Additionaly, setup phase used to register new user and to login for that user (producing invalidated session id).
+
+Each API tested for: valid usage, invalid itemID values.
+GET /item used to verify list consistency.
+Also, during testItem, /login API tested for invalidating previous sessions of user.

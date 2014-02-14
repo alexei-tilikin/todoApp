@@ -1,0 +1,23 @@
+<!-- Template for Login, Register controllers -->
+<section id="loginstyle">
+    <div class="area"></div>
+        <header>
+            {{actionTitle}}
+            <a id="screenSwitch" ng-href="#/{{nextScreen}}">
+                ({{nextScreen}})</a>
+        </header>
+
+        <div ng-repeat="elm in elements">
+                <input type="{{elm.type}}"
+                       placeholder="{{elm.hint}}"
+                        ng-class="{wrongInput: elm.msg.length}"
+                        ng-model="elm.value"/>
+            <div class="errorMessage"> {{elm.msg}} </div>
+        </div>
+        <div class="area">
+            <button id="action-button" ng-click="send()">
+                {{actionName}}
+            </button>
+            <p class="errorMessage"> {{errorMessage}} </p>
+        </div>
+</section>

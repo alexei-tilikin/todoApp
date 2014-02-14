@@ -1,0 +1,69 @@
+#loginstyle header {
+    position: relative;
+    width: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #b3b3b3;
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+.errorMessage {
+    font-size: 20px;
+    font-weight: normal;
+    color: #6A0000;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+div.errorMessage {
+    display: inline;
+    font-size: 18px;
+}
+
+#loginstyle input {
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    border-width: 0;
+    box-shadow: 1px 2px 1px #000000;
+}
+
+#loginstyle input.wrongInput {
+    background-color: #e8cac6;*
+    background-color: rgba(0.909, 0.584, 0.586, 0.5);
+    box-shadow: 1px 2px 1px #6D1007;
+}
+
+#loginstyle .area {
+    clear: both;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#loginstyle button {
+    position: relative;
+    height: 30px;
+    left: 30%;
+}
+
+#screenSwitch {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
