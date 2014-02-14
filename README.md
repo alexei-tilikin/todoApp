@@ -14,3 +14,7 @@ Testing:
 In directory /test read tester.txt
 Run:
     node test.js
+    
+    
+See this application running on 
+    http://todo-app-alexei.herokuapp.com/
