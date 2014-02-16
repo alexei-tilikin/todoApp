@@ -101,7 +101,6 @@ module.exports = {
 
     //Middleware for GET /item
     getItems: function (req, res, next) {
-        console.log(util.inspect(req.body.userData.todos)); //DEBUG
         res.send(req.body.userData.todos.jsonView());
     },
 
